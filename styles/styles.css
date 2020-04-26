@@ -1,27 +1,16 @@
-
+/* Reseting Prdefined Styles */
 *,html{
     margin: 0;
     padding: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    /* background: rgba(1, 29, 51, 0.945); */
-    /* background: rgb(14, 12, 12); */
     background: #222831;
     margin: 0;
     padding:0;
     transition: 0.5s ease;
     
 }
-/* #mytag{
-    z-index: -1;
-    position: absolute;
-    bottom:0;
-    left:0;
-    transform: rotate(-45deg);
-    
-    
-} */
 h1{
     margin : 0;
     color: white;
@@ -40,12 +29,10 @@ table tbody tr th{
 table tbody tr td{
     color: white;
 }
-
 #collapse1{
     overflow-y:scroll;
     height:400px;
 }
-
 .showLoader{
     display: block;
 }
@@ -55,7 +42,6 @@ table tbody tr td{
 #totalConfirmed,#totalRestored,#totalDeceased{
     font-size: small;
 }
-
 .darkMode{
 background: white;
 color:black;
@@ -146,53 +132,18 @@ color:black;
     height:30vh; 
     width:50vw;
   }
-  /* @media only screen and (max-width: 200px) {
-    .chart-container{
-        width: 100%;
-    }
-  } */
-
-
+  
+/* Code From Official Documentation: Chartist.js  */
   .ct-series-a .ct-slice-pie {
-    /* fill of the pie slieces */
-    fill: hsla(56, 93%, 47%, 0.925);
-    /* give your pie slices some outline or separate them visually by using the background color here */
-    stroke: white;
-    /* outline width */
-    stroke-width: 4px;
-  }
+   fill: hsla(56, 93%, 47%, 0.925);
+   stroke: white;
+   stroke-width: 4px;
+   }
 
 
   .ct-series-b .ct-slice-pie {
-    /* fill of the pie slieces */
-    fill: hsla(120, 93%, 47%, 0.637);
-    /* give your pie slices some outline or separate them visually by using the background color here */
-   
-  }
+   fill: hsla(120, 93%, 47%, 0.637);
+   }
   .ct-series-c .ct-slice-pie {
-    /* fill of the pie slieces */
-    fill: hsla(0, 93%, 47%, 0.637);
-    /* give your pie slices some outline or separate them visually by using the background color here */
-    
-  }
-
-   /* Styling Scroll Bar */
-   table::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-   table::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-    table::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
-}
+   fill: hsla(0, 93%, 47%, 0.637);
+   }
