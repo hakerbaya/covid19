@@ -1,0 +1,97 @@
+<!-- 
+Author: Mubashir Ahmad
+ Github: @hakerbaya
+ Personal Project: ₵ØVłĐ19
+ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="red">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Covid19 | Haker Baya</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  </head>
+  <body style="background: snowwhite;">
+      <div class="container-fluid text-center">
+        <h1>🅒🅞🅥🅘🅓➊➒</h1>
+        <span id="mytag">👱‍♂️ | ʜᴀᴋᴇʀʙᴀʏᴀ | 2020 </span>
+      </div>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-4" style="">
+         <h5 id="totalConfirmed" style="border-radius:12px; border: 1px solid black; padding-top: 1em; padding-bottom: 1em; background-color: #ffc107!important; color: white;">
+                <div class="spinner-border loader" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+         </h5>
+         
+        </div>
+        <div class="col-4 text-success">
+          <h5 id="totalRestored" style="border-radius:12px; border: 1px solid black; padding-top: 1em; padding-bottom: 1em;background-color: #28a745!important; color: white;">
+                <div class="spinner-border loader" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+          </h5>
+        </div>
+        <div class="col-4 text-danger">
+          <h5 id="totalDeceased" style="border-radius:12px; border: 1px solid black; padding-top: 1em; padding-bottom: 1em; background-color: #dc3545!important; color: white;">
+                <div class="spinner-border loader" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="container" >
+        <div class="row">
+          
+          <div class="col">
+            <input type="text" id="search" onkeyup = "searchCountry()" class="form-control" placeholder="Search">
+                <div style="width:100%;overflow:auto; max-height:500px; max-width: 700px;">
+             
+              <table class="table">
+                <thead style="background:#DCDCDC;">
+                  <tr>
+                    <th scope="col">Countries</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Deceased</th>
+                  </tr>
+                 </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="loading-bar loader"></div>  
+          </div>
+         <div class="col">
+           <div class="ct-chart ct-golden-section" id="chart1"></div>
+          </div>
+          </div>
+        <div>
+    </div>
+
+    <div class="footer-copyright py-3 text-center">
+      <div class="container-fluid" style="color:white">
+       Check Source Code Here:  <a href="https://www.github.com/hakerbaya"> Github </a>| Designed By Haker Baya 
+
+      </div>
+    </div>
+  </footer>
+  </body>
+  <link rel="stylesheet" href="./styles/styles.css">
+<script src="./js/script.js"></script>
+
+</html>

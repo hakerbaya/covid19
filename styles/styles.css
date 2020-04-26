@@ -1,0 +1,198 @@
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* background: rgba(1, 29, 51, 0.945); */
+    /* background: rgb(14, 12, 12); */
+    background: #222831;
+    margin: 0;
+    padding:0;
+    transition: 0.5s ease;
+    
+}
+/* #mytag{
+    z-index: -1;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform: rotate(-45deg);
+    
+    
+} */
+h1{
+    margin : 0;
+    color: white;
+    font-size: 4rem;
+}
+h1:hover{
+    cursor: pointer;
+}
+#mytag{
+    color: rgba(11, 196, 171, 0.884);
+}
+
+table tbody tr th{
+    color:rgba(255, 255, 255, 0.795) ;
+}
+table tbody tr td{
+    color: white;
+}
+
+#collapse1{
+    overflow-y:scroll;
+    height:400px;
+}
+
+.showLoader{
+    display: block;
+}
+.hideLoader{
+    display: none;
+}
+#totalConfirmed,#totalRestored,#totalDeceased{
+    font-size: small;
+}
+
+.darkMode{
+background: white;
+color:black;
+}
+
+#search{
+    margin-bottom: 10px;
+}
+
+/* Loading Bar Css*/
+
+.loading-bar {
+    position: relative;
+    width: 100%;
+  }
+  .loading-bar:before {
+    -webkit-animation: loading-bar 0.4s ease-out infinite;
+    -moz-animation: loading-bar 0.4s ease-out infinite;
+    -ms-animation: loading-bar 0.4s ease-out infinite;
+    -o-animation: loading-bar 0.4s ease-out infinite;
+    animation: loading-bar 0.4s ease-out infinite;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: red;
+  }
+  .loading-bar > * {
+    -webkit-animation: loading-complete 1s ease-out;
+    -moz-animation: loading-complete 1s ease-out;
+    -ms-animation: loading-complete 1s ease-out;
+    -o-animation: loading-complete 1s ease-out;
+    animation: loading-complete 1s ease-out;
+  }
+  
+  @-webkit-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    80% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    80% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-ms-keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    80% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes loading-bar {
+    0% {
+      width: 0%;
+    }
+    80% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .chart-container{
+    position: relative; 
+    height:30vh; 
+    width:50vw;
+  }
+  /* @media only screen and (max-width: 200px) {
+    .chart-container{
+        width: 100%;
+    }
+  } */
+
+
+  .ct-series-a .ct-slice-pie {
+    /* fill of the pie slieces */
+    fill: hsla(56, 93%, 47%, 0.925);
+    /* give your pie slices some outline or separate them visually by using the background color here */
+    stroke: white;
+    /* outline width */
+    stroke-width: 4px;
+  }
+
+
+  .ct-series-b .ct-slice-pie {
+    /* fill of the pie slieces */
+    fill: hsla(120, 93%, 47%, 0.637);
+    /* give your pie slices some outline or separate them visually by using the background color here */
+   
+  }
+  .ct-series-c .ct-slice-pie {
+    /* fill of the pie slieces */
+    fill: hsla(0, 93%, 47%, 0.637);
+    /* give your pie slices some outline or separate them visually by using the background color here */
+    
+  }
+
+   /* Styling Scroll Bar */
+   table::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+   table::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+    table::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
