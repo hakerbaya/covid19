@@ -1,4 +1,2 @@
-# covid19
-Covid 19 Tracker - Daily Updates. \
-
-[Covid 19 Dashbaord ](https://hakerbaya.github.io/covid19)
+# Covid19 Dashboard | Daily Updates
+![](https://raw.githubusercontent.com/hakerbaya/covid19/master/Covid19%20Sc.png)
